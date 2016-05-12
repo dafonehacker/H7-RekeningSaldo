@@ -12,7 +12,15 @@ namespace H7_RekeningSaldo
         Verrichting _verrichting = new Verrichting();
         Rekening _rekening = new Rekening();
 
-        
+        public void addVerrichting(Double bedrag, DateTime datum, String omschrijving)
+        {
+             
+        }
+
+        public Controller()
+        {
+
+        }
         
     }
 }

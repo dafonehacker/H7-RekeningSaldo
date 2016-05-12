@@ -19,7 +19,7 @@ namespace frmRekeningSaldo
 
         private void btnToevoegen_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
