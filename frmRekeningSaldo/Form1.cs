@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace frmRekeningSaldo
 {
-    public partial class Form1 : Form
+    public partial class frmRekeningSaldo : Form
     {
-        public Form1()
+        public frmRekeningSaldo()
         {
             InitializeComponent();
         }
+
     }
 }

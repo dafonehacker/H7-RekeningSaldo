@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace H7_RekeningSaldo
 {
-    public class Business
+    class Verrichting
     {
-
     }
 }
