@@ -8,5 +8,12 @@ namespace H7_RekeningSaldo
 {
     class Verrichting
     {
+        //properties
+
+
+        //constructor
+
+        //methods
+
     }
 }
