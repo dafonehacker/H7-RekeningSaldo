@@ -16,9 +16,7 @@ namespace H7_RekeningSaldo
             get { return _verrichtingen; }
             set { _verrichtingen = value; }
         }
-        
-        
-
+       
         //constructor
         public Rekening()
         {
