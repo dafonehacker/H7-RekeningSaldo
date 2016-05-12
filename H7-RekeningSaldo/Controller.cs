@@ -9,7 +9,6 @@ namespace H7_RekeningSaldo
     public class Controller
     {
         //communicatie met andere classes
-        Verrichting _verrichting = new Verrichting();
         Rekening _rekening = new Rekening();
 
         
@@ -21,7 +20,7 @@ namespace H7_RekeningSaldo
         //methods
         public void addVerrichting(Double bedrag, DateTime datum, String omschrijving)
         {
-
+            Verrichting _verrichting = new Verrichting(bedrag, datum, omschrijving);
         }
         
     }
