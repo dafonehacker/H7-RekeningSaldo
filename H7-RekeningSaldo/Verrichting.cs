@@ -35,6 +35,14 @@ namespace H7_RekeningSaldo
         
         
         //constructor
+        public Verrichting()
+        {
+
+        }
+        public Verrichting(Double bedrag, DateTime datum, String omschrijving )
+        {
+
+        }
 
         //methods
 
