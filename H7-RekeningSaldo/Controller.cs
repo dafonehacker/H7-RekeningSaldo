@@ -8,6 +8,11 @@ namespace H7_RekeningSaldo
 {
     public class Controller
     {
+        //communicatie met andere classes
+        Verrichting _verrichting = new Verrichting();
+        Rekening _rekening = new Rekening();
 
+        
+        
     }
 }
