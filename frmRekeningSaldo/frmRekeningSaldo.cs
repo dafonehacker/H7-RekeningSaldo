@@ -17,5 +17,9 @@ namespace frmRekeningSaldo
             InitializeComponent();
         }
 
+        private void btnToevoegen_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
