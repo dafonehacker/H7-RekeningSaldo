@@ -46,5 +46,11 @@ namespace H7_RekeningSaldo
 
         //methods
 
+        //herschrijven van de ToString() method
+        public override string ToString()
+        {
+            return "Rekening van ...";
+        }
+
     }
 }
