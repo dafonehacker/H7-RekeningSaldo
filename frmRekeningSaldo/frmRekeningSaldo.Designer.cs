@@ -80,6 +80,7 @@
             this.lstVerrichtingen.Name = "lstVerrichtingen";
             this.lstVerrichtingen.Size = new System.Drawing.Size(275, 154);
             this.lstVerrichtingen.TabIndex = 5;
+            this.lstVerrichtingen.TabStop = false;
             // 
             // lblOmschrijving
             // 
