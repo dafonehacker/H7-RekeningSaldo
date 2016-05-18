@@ -25,14 +25,14 @@ namespace H7_RekeningSaldo
         {
             return _rekening.GetRekeningStand();
         }
-        public string getVerrichtingen()
+        public List<string> getVerrichtingen()
         {
             List<string> temp = new List<string>();
-            temp.Add(_rekening.Verrichtingen.ToString());
-            foreach (string item in temp)
+            foreach (Verrichting item in _rekening.Verrichtingen)
             {
-                return item;
+                temp.Add(item.ToString());
             }
+            return temp;
         }
     }
 }
