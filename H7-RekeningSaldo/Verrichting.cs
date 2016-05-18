@@ -10,7 +10,6 @@ namespace H7_RekeningSaldo
     {
         //properties
         private Double _bedrag;
-
         public Double Bedrag
         {
             get { return _bedrag; }
@@ -18,22 +17,19 @@ namespace H7_RekeningSaldo
         }
 
         private DateTime _datum;
-
         public DateTime Datum
         {
             get { return _datum; }
             set { _datum = value; }
         }
-        private String _omschrijving;
 
+        private String _omschrijving;
         public String Omschrijving
         {
             get { return _omschrijving; }
             set { _omschrijving = value; }
         }
-        
-        
-        
+            
         //constructor
         public Verrichting()
         {
