@@ -25,9 +25,9 @@ namespace H7_RekeningSaldo
         {
             return _rekening.GetRekeningStand();
         }
-        public List<string> getVerrichtingen()
+        public string getVerrichtingen()
         {
-            List<string> temp;
+            List<string> temp = new List<string>();
             temp.Add(_rekening.Verrichtingen.ToString());
             foreach (string item in temp)
             {
