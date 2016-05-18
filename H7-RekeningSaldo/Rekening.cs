@@ -15,8 +15,7 @@ namespace H7_RekeningSaldo
         {
             get { return _verrichtingen; }
             set { _verrichtingen = value; }
-        }
-       
+        }      
         //constructor
         public Rekening()
         {
@@ -26,8 +25,7 @@ namespace H7_RekeningSaldo
         public void AddVerrichting(Verrichting verrichting)
         { 
             //code voor het toevoegen van een nieuwe verrichting
-            //aan de verzameling Verrichtingen
-        
+            //aan de verzameling Verrichtingen      
         }
         public double GetRekeningStand()
         {

@@ -10,8 +10,7 @@ namespace H7_RekeningSaldo
     {
         //communicatie met andere classes
         Rekening _rekening = new Rekening();
-
-        
+ 
         //constructor
         public Controller()
         {
