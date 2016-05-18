@@ -27,6 +27,7 @@ namespace H7_RekeningSaldo
             //code voor het toevoegen van een nieuwe verrichting
             //aan de verzameling Verrichtingen  
             Verrichtingen.Add(verrichting);
+            
         }
         public double GetRekeningStand()
         {
