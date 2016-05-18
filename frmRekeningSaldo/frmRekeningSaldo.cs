@@ -23,6 +23,10 @@ namespace frmRekeningSaldo
         private void btnToevoegen_Click(object sender, EventArgs e)
         {
             _controller.addVerrichting(Convert.ToDouble(txtBedrag.Text), Convert.ToDateTime(txtDatum.Text), Convert.ToString(txtOmschrijving.Text));
+            foreach ( TextBox box in this.Controls.OfType<TextBox>())
+            {
+                box.Clear();
+            }
             lstVerrichtingen.Items.Add(_controller.getVerrichtingen());
         }
     }
