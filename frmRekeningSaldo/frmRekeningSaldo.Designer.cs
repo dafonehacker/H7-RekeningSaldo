@@ -47,7 +47,7 @@
             this.lblStandText.Location = new System.Drawing.Point(342, 15);
             this.lblStandText.Name = "lblStandText";
             this.lblStandText.Size = new System.Drawing.Size(89, 17);
-            this.lblStandText.TabIndex = 1;
+            this.lblStandText.TabIndex = 6;
             this.lblStandText.Text = "Rekeningstand:";
             // 
             // lblStand
@@ -57,7 +57,7 @@
             this.lblStand.Location = new System.Drawing.Point(299, 45);
             this.lblStand.Name = "lblStand";
             this.lblStand.Size = new System.Drawing.Size(184, 35);
-            this.lblStand.TabIndex = 2;
+            this.lblStand.TabIndex = 7;
             this.lblStand.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnToevoegen
@@ -66,7 +66,7 @@
             this.btnToevoegen.Location = new System.Drawing.Point(302, 83);
             this.btnToevoegen.Name = "btnToevoegen";
             this.btnToevoegen.Size = new System.Drawing.Size(181, 89);
-            this.btnToevoegen.TabIndex = 3;
+            this.btnToevoegen.TabIndex = 4;
             this.btnToevoegen.Text = "Voeg verrichting toe";
             this.btnToevoegen.UseVisualStyleBackColor = true;
             this.btnToevoegen.Click += new System.EventHandler(this.btnToevoegen_Click);
@@ -79,7 +79,7 @@
             this.lstVerrichtingen.Location = new System.Drawing.Point(13, 12);
             this.lstVerrichtingen.Name = "lstVerrichtingen";
             this.lstVerrichtingen.Size = new System.Drawing.Size(275, 154);
-            this.lstVerrichtingen.TabIndex = 4;
+            this.lstVerrichtingen.TabIndex = 5;
             // 
             // lblOmschrijving
             // 
@@ -88,7 +88,7 @@
             this.lblOmschrijving.Location = new System.Drawing.Point(14, 186);
             this.lblOmschrijving.Name = "lblOmschrijving";
             this.lblOmschrijving.Size = new System.Drawing.Size(144, 15);
-            this.lblOmschrijving.TabIndex = 5;
+            this.lblOmschrijving.TabIndex = 8;
             this.lblOmschrijving.Text = "Voeg een omschrijving toe:";
             // 
             // lblBedrag
@@ -98,7 +98,7 @@
             this.lblBedrag.Location = new System.Drawing.Point(14, 253);
             this.lblBedrag.Name = "lblBedrag";
             this.lblBedrag.Size = new System.Drawing.Size(213, 15);
-            this.lblBedrag.TabIndex = 6;
+            this.lblBedrag.TabIndex = 10;
             this.lblBedrag.Text = "Geef het bedrag in (eventueel negatief):";
             // 
             // lblDatum
@@ -108,7 +108,7 @@
             this.lblDatum.Location = new System.Drawing.Point(14, 219);
             this.lblDatum.Name = "lblDatum";
             this.lblDatum.Size = new System.Drawing.Size(151, 15);
-            this.lblDatum.TabIndex = 7;
+            this.lblDatum.TabIndex = 9;
             this.lblDatum.Text = "Geef de datum (jjjj/mm/dd):";
             // 
             // txtOmschrijving
@@ -117,7 +117,7 @@
             this.txtOmschrijving.Location = new System.Drawing.Point(189, 182);
             this.txtOmschrijving.Name = "txtOmschrijving";
             this.txtOmschrijving.Size = new System.Drawing.Size(293, 23);
-            this.txtOmschrijving.TabIndex = 8;
+            this.txtOmschrijving.TabIndex = 1;
             // 
             // txtBedrag
             // 
@@ -125,7 +125,7 @@
             this.txtBedrag.Location = new System.Drawing.Point(269, 249);
             this.txtBedrag.Name = "txtBedrag";
             this.txtBedrag.Size = new System.Drawing.Size(213, 23);
-            this.txtBedrag.TabIndex = 9;
+            this.txtBedrag.TabIndex = 3;
             // 
             // txtDatum
             // 
@@ -133,7 +133,7 @@
             this.txtDatum.Location = new System.Drawing.Point(197, 216);
             this.txtDatum.Name = "txtDatum";
             this.txtDatum.Size = new System.Drawing.Size(285, 23);
-            this.txtDatum.TabIndex = 10;
+            this.txtDatum.TabIndex = 2;
             // 
             // frmRekeningSaldo
             // 
