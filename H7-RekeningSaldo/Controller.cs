@@ -30,7 +30,7 @@ namespace H7_RekeningSaldo
             List<string> temp;
             foreach (Verrichting item in _rekening.Verrichtingen)
             {
-                temp.Add 
+               
             }
         }
     }
