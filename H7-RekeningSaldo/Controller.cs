@@ -23,11 +23,11 @@ namespace H7_RekeningSaldo
         }
         public double getRekeningStand()
         {
-            return;
+            return _rekening.GetRekeningStand();
         }
-        public  List<String> getVerrichtingen()
+        public  List<Verrichting> getVerrichtingen()
         {
-            return;
+            return _rekening.Verrichtingen;
         }
     }
 }
