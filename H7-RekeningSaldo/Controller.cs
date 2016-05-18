@@ -22,6 +22,13 @@ namespace H7_RekeningSaldo
         {
             Verrichting _verrichting = new Verrichting(bedrag, datum, omschrijving);
         }
-        
+        public double getRekeningStand()
+        {
+            return;
+        }
+        public  List<String> getVerrichtingen()
+        {
+            return;
+        }
     }
 }
