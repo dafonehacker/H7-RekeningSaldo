@@ -109,7 +109,7 @@
             this.lblDatum.Name = "lblDatum";
             this.lblDatum.Size = new System.Drawing.Size(151, 15);
             this.lblDatum.TabIndex = 7;
-            this.lblDatum.Text = "Geef de datum (dd/mm/jjjj):";
+            this.lblDatum.Text = "Geef de datum (jjjj/mm/dd):";
             // 
             // txtOmschrijving
             // 

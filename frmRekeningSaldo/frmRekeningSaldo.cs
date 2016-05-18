@@ -25,6 +25,5 @@ namespace frmRekeningSaldo
             _controller.addVerrichting(Convert.ToDouble(txtBedrag.Text), Convert.ToDateTime(txtDatum.Text), Convert.ToString(txtOmschrijving.Text));
             lstVerrichtingen.Items.Add(_controller.getVerrichtingen());
         }
-
     }
 }
