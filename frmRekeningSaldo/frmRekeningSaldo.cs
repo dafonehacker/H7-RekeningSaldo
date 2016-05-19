@@ -22,13 +22,21 @@ namespace frmRekeningSaldo
 
         private void btnToevoegen_Click(object sender, EventArgs e)
         {
-            _controller.addVerrichting(Convert.ToDouble(txtBedrag.Text), Convert.ToDateTime(txtDatum.Text), Convert.ToString(txtOmschrijving.Text));
-            foreach ( TextBox box in this.Controls.OfType<TextBox>())
+            try
             {
-                box.Clear();
+                _controller.addVerrichting(Convert.ToDouble(txtBedrag.Text), Convert.ToDateTime(txtDatum.Text), Convert.ToString(txtOmschrijving.Text));
+                foreach (TextBox box in this.Controls.OfType<TextBox>())
+                {
+                    box.Clear();
+                }
+                lstVerrichtingen.DataSource = _controller.getVerrichtingen();
+                lblStand.Text = Convert.ToString(_controller.getRekeningStand());
             }
-            lstVerrichtingen.DataSource = _controller.getVerrichtingen();
-            lblStand.Text = Convert.ToString(_controller.getRekeningStand());
+            catch
+            {
+                MessageBox.Show("Zorg dat je alle waarden op de juiste manier hebt ingegeven");
+                
+            }
         }
     }
 }
