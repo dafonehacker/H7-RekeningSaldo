@@ -47,7 +47,8 @@ namespace H7_RekeningSaldo
         //herschrijven van de ToString() method
         public override string ToString()
         {
-            return Omschrijving + " (€" + Math.Round(Bedrag, 2) + ")" + " - " + Datum.Date;
+            string datumnieuw = Datum.Day + "-" + Datum.Month + "-" + Datum.Year;
+            return Omschrijving + " (€" + Math.Round(Bedrag, 2) + ")" + " op " + datumnieuw;
         }
 
     }
