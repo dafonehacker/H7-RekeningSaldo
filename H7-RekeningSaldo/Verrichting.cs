@@ -28,8 +28,7 @@ namespace H7_RekeningSaldo
         {
             get { return _omschrijving; }
             set { _omschrijving = value; }
-        }
-            
+        }       
         //constructor
         public Verrichting()
         {
@@ -41,15 +40,12 @@ namespace H7_RekeningSaldo
             Datum = datum;
             Bedrag = bedrag;
         }
-
-        //methods
-
-        //herschrijven van de ToString() method
+        //methods       
         public override string ToString()
         {
+            //herschrijven van de ToString() method
             string datumnieuw = Datum.Day + "-" + Datum.Month + "-" + Datum.Year;
-            return Omschrijving + " (€" + Math.Round(Bedrag, 2) + ")" + " op " + datumnieuw;
+            return Omschrijving + " (€" + Bedrag.ToString("0.00") + ")" + " op " + datumnieuw;
         }
-
     }
 }
