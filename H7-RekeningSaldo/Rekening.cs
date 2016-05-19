@@ -22,7 +22,8 @@ namespace H7_RekeningSaldo
         {
             get { return _rekeningstand; }
             set { _rekeningstand = value; }
-        }      
+        }
+        
         //constructor
         public Rekening()
         {
@@ -34,12 +35,16 @@ namespace H7_RekeningSaldo
             //code voor het toevoegen van een nieuwe verrichting
             //aan de verzameling Verrichtingen  
             Verrichtingen.Add(verrichting);
-            Rekeningstand += verrichting.Bedrag;           
+            Rekeningstand += verrichting.Bedrag;
+            
         }
-        public double GetRekeningStand()
+        public string GetRekeningStand()
         {
             //geef de stand van de rekening terug
-            return Rekeningstand;
-        }       
+
+            return Rekeningstand.ToString("0.00");
+        }
+
+        
     }
 }
