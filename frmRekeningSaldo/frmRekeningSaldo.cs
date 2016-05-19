@@ -22,10 +22,19 @@ namespace frmRekeningSaldo
 
         private void btnToevoegen_Click(object sender, EventArgs e)
         {
-            try//foutafhandeling
+            foreach (TextBox box in this.Controls.OfType<TextBox>())//alle textboxes controlleren of het leeg is
             {
+                if (string.IsNullOrWhiteSpace(box.Text))
+                {
+                    MessageBox.Show("Zorg ervoor dat je alle vakjes hebt ingevuld!");//messagebox wordt getoond indien er een vakje leeg is
+                    return;
+                }
+            }
+       
+            try//foutafhandeling
+            {              
                 //het bedrag, de datum en de omschrijving worden weggeschreven naar de controller
-                _controller.addVerrichting(Convert.ToDouble(txtBedrag.Text), Convert.ToDateTime(txtDatum.Text), Convert.ToString(txtOmschrijving.Text));
+                _controller.addVerrichting(Convert.ToDouble(txtBedrag.Text), Convert.ToDateTime(txtDatum.Text), txtOmschrijving.Text);
                 //alle textboxes worden gecleared zodat er een nieuwe verrichting kan worden toegevoegd
                 foreach (TextBox box in this.Controls.OfType<TextBox>())
                 {
