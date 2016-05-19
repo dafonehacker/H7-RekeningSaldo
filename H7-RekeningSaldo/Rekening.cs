@@ -9,14 +9,15 @@ namespace H7_RekeningSaldo
     class Rekening
     {
         //properties
-        private List<Verrichting> _verrichtingen;
+        private List<Verrichting> _verrichtingen; //lijst met alle verrichtingen op de rekening
 
         public List<Verrichting> Verrichtingen
         {
             get { return _verrichtingen; }
             set { _verrichtingen = value; }
         }
-        private double _rekeningstand;
+
+        private double _rekeningstand;//variabele die de rekeningstand bijhoudt
 
         public double Rekeningstand
         {
@@ -25,7 +26,7 @@ namespace H7_RekeningSaldo
         }
         
         //constructor
-        public Rekening()
+        public Rekening()//bij het maken van een rekening wordt een lijst met alle verrichtingen gemaakt
         {
             Verrichtingen = new List<Verrichting>();
         }
@@ -34,15 +35,15 @@ namespace H7_RekeningSaldo
         { 
             //code voor het toevoegen van een nieuwe verrichting
             //aan de verzameling Verrichtingen  
-            Verrichtingen.Add(verrichting);
-            Rekeningstand += verrichting.Bedrag;
+            Verrichtingen.Add(verrichting);//de verrichting toevoegen aan de list
+            Rekeningstand += verrichting.Bedrag;//de rekeningstand bijwerken
             
         }
         public string GetRekeningStand()
         {
             //geef de stand van de rekening terug
 
-            return "€" + Rekeningstand.ToString("0.00");
+            return "€" + Rekeningstand.ToString("0.00");//Getal juist formatteren
         }
 
         
