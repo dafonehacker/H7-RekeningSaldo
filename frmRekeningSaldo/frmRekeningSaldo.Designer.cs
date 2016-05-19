@@ -54,7 +54,7 @@
             // 
             this.lblStand.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStand.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.lblStand.Location = new System.Drawing.Point(299, 45);
+            this.lblStand.Location = new System.Drawing.Point(299, 38);
             this.lblStand.Name = "lblStand";
             this.lblStand.Size = new System.Drawing.Size(184, 35);
             this.lblStand.TabIndex = 7;
