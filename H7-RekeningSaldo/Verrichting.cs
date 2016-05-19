@@ -37,7 +37,9 @@ namespace H7_RekeningSaldo
         }
         public Verrichting(Double bedrag, DateTime datum, String omschrijving )
         {
-
+            Omschrijving = omschrijving;
+            Datum = datum;
+            Bedrag = bedrag;
         }
 
         //methods

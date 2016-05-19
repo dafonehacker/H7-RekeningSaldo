@@ -27,7 +27,7 @@ namespace frmRekeningSaldo
             {
                 box.Clear();
             }
-            lstVerrichtingen.Items.Add(_controller.getVerrichtingen());
+            lstVerrichtingen.Text = Convert.ToString(_controller.getVerrichtingen());
         }
     }
 }
