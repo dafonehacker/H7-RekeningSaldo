@@ -22,7 +22,7 @@ namespace H7_RekeningSaldo
             Verrichting _verrichting = new Verrichting(bedrag, datum, omschrijving);
             _rekening.AddVerrichting(_verrichting);
         }
-        public double getRekeningStand()
+        public string getRekeningStand()
         {
             return _rekening.GetRekeningStand();
         }

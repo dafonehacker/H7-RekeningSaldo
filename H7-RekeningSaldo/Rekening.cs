@@ -38,11 +38,11 @@ namespace H7_RekeningSaldo
             Rekeningstand += verrichting.Bedrag;
             
         }
-        public double GetRekeningStand()
+        public string GetRekeningStand()
         {
             //geef de stand van de rekening terug
 
-            return Rekeningstand;
+            return Rekeningstand.ToString("0.00");
         }
 
         
