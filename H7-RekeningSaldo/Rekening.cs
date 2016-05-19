@@ -42,7 +42,7 @@ namespace H7_RekeningSaldo
         {
             //geef de stand van de rekening terug
 
-            return Rekeningstand.ToString("0.00");
+            return "€" + Rekeningstand.ToString("0.00");
         }
 
         
