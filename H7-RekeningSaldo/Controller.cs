@@ -12,28 +12,27 @@ namespace H7_RekeningSaldo
         Rekening _rekening = new Rekening();
  
         //constructor
-        public Controller()
+        public Controller()//lege constructor
         {
-
         }
         //methods
-        public void addVerrichting(Double bedrag, DateTime datum, String omschrijving)
+        public void addVerrichting(Double bedrag, DateTime datum, String omschrijving)//bedrag, datum en omschrijving worden opgehaald van het forum
         {
             Verrichting _verrichting = new Verrichting(bedrag, datum, omschrijving);
             _rekening.AddVerrichting(_verrichting);
         }
         public string getRekeningStand()
         {
-            return _rekening.GetRekeningStand();
+            return _rekening.GetRekeningStand();//de rekeningstand wordt meegegeven naar het forum
         }
         public List<string> getVerrichtingen()
         {
-            List<string> temp = new List<string>();
+            List<string> Lijst = new List<string>();//nieuwe lijst wordt aangemaakt
             foreach (Verrichting item in _rekening.Verrichtingen)
             {
-                temp.Add(item.ToString());
-            }
-            return temp;
+                Lijst.Add(item.ToString());
+            }//iedere verrichting wordt omgezet naar de juiste text
+            return Lijst;//de lijst wordt meegegeven naar het forum
         }
     }
 }
